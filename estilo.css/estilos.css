@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #eef2f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+.cv-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+header h2 {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.cv-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-column {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f7f9fc;
+  padding: 30px;
+  border-right: 1px solid #ddd;
+}
+
+.right-column {
+  flex: 2;
+  padding: 30px;
+}
+
+.foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #003366;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+h3 {
+  margin-bottom: 15px;
+  color: #003366;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+article p {
+  text-align: justify;
+}
+
+/* Redes sociales */
+.iconos-redes {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.iconos-redes a {
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  color: white;
+}
+
+/* Colores personalizados por red */
+.facebook {
+  background-color: #3b5998;
+}
+.instagram {
+  background-color: #e1306c;
+}
+.linkedin {
+  background-color: #0077b5;
+}
+.whatsapp {
+  background-color: #25d366;
+}
+
+.iconos-redes a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cv-grid {
+    flex-direction: column;
+  }
+
+  .left-column {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.text1 {
+    text-transform: capitalize;
+ }
+
+.text2 {
+    text-transform: lowercase;
+}
